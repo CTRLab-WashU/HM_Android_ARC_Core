@@ -32,20 +32,24 @@
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <receiver android:name="com.healthymedium.arc.notifications.NotificationAlarmReceiver"/>
-        <receiver android:name="com.healthymedium.arc.notifications.NotificationResetReceiver">
+        <receiver android:name="com.healthymedium.arc.notifications.NotificationAlarmReceiver"
+            android:exported="true"/>
+        <receiver android:name="com.healthymedium.arc.notifications.NotificationResetReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.healthymedium.arc.time.TimeChangeReceiver">
+        <receiver android:name="com.healthymedium.arc.time.TimeChangeReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="android.intent.action.DATE_CHANGED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.healthymedium.arc.study.BootReceiver">
+        <receiver android:name="com.healthymedium.arc.study.BootReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
