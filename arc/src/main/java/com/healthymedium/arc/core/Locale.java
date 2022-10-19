@@ -27,6 +27,7 @@ public class Locale {
     public static String COUNTRY_EUROPE = "EU";
     public static String COUNTRY_JAPAN = "JP";
     public static String COUNTRY_KOREA = "KR";
+    public static String COUNTRY_419 = "419";
 
     public static String LANGUAGE_GERMAN = "de";
     public static String LANGUAGE_ENGLISH = "en";
